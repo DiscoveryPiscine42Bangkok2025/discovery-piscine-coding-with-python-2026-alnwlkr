@@ -7,13 +7,13 @@ def is_int(val):
 	except ValueError:
 		return False
 
+print('Enter a number')
 nb = input().strip()
 
 if is_int(nb):
 	nb = int(nb)
-	if nb == 0:
-		print("This number is both positive and negative.")
-	elif nb < 0:
-		print("This number is negative.")
-	else:
-		print("This number is positive.")
+	i = 0
+	while i <= 9:
+		res = nb * i
+		print(i, 'x', nb, '=', res)
+		i = i + 1
