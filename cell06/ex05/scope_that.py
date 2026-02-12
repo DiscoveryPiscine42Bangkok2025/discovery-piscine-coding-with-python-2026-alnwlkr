@@ -3,12 +3,12 @@
 def add_one(n):
     return n + 1
 
-def is_float(val):
-	try:
-		float(val)
-		return True
-	except ValueError:
-		return False
+# def is_float(val):
+# 	try:
+# 		float(val)
+# 		return True
+# 	except ValueError:
+# 		return False
 
 n = 41
 print(f'Number before add_one: {n}')
